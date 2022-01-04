@@ -1,6 +1,17 @@
 import React from 'react'
 
-function Message() {
+type typeOfMessage = {
+    avatar: string,
+    name: string,
+    message: string,
+    time: string,
+}
+const Message: React.FC<typeOfMessage> = ({
+                                              avatar,
+                                              name,
+                                              message,
+                                              time
+                                          }) => {
     return (
         <div>
 
