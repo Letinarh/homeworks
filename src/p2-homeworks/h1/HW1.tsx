@@ -1,6 +1,6 @@
 import React from 'react'
 import Message from "./Message";
-import st from "./all.module.css";
+
 
 const messageData = {
     avatar: 'https://i.pinimg.com/originals/ff/ae/4e/ffae4e028ebe60d38913eb8c8f2255ec.png',
@@ -13,7 +13,7 @@ function HW1() {
     return (
         <div>
             <hr/>
-            <h1 className={st.h3}>Homework 1</h1>
+            <h1>Homework 1</h1>
 
             {/*should work (должно работать)*/}
 
