@@ -3,9 +3,9 @@ import Message from "./Message";
 
 
 const messageData = {
-    avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
-    name: 'Some Name',
-    message: 'some text',
+    avatar: 'https://i.pinimg.com/originals/ff/ae/4e/ffae4e028ebe60d38913eb8c8f2255ec.png',
+    name: 'Vasiliy',
+    message: "Hello, people!  I'm learning TypeScript. And enjoy that",
     time: '22:00',
 }
 

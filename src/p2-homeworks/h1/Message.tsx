@@ -1,5 +1,5 @@
 import React from 'react'
-
+import s from './Message.module.css'
 
 
 type MessagePropsType = {
@@ -8,23 +8,47 @@ type MessagePropsType = {
     message: string,
     time: string
 }
-function Message (props: MessagePropsType) {
+
+function Message(props: MessagePropsType) {
     return (
         <div>
-            <section className="chat">
-                <div className="message message--user-1">
-                    <time className="message__time">{props.time}</time>
-                    <figure className="message__author-pic">
-                        <img src={props.avatar} alt={"avatar"}/>
-                    </figure>
-                    <div className="message__text">
-                        <p>{props.message}</p>
+            <div >
+
+                <div className={s.container}>
+                    <div className ={s.avatarArea}>
+                        <img className={s.avatar} src={props.avatar} alt={"avatar"}/>
                     </div>
-                    <div>{props.name}</div>
+                    <div className={s.messageArea}>
+                        <div className={s.name}> {props.name} </div>
+                        <p className={s.messageText}>Some text to message</p>
+
+                    </div>
+                    <div className={s.timeArea}> {props.time}</div>
+
                 </div>
-            </section>
 
 
+
+
+               {/* <div>
+                    <span>
+                        <figure>
+                            <img className={s.avatar} src={props.avatar} alt={"avatar"}/>
+                        </figure>
+                    </span>
+                    <span>
+                        <div>
+                             <div>{props.name}</div>
+                             <div>
+                                 <p>{props.message}</p>
+                             </div>
+                             <time>{props.time}</time>
+                        </div>
+
+                    </span>
+
+                </div>*/}
+            </div>
 
 
         </div>

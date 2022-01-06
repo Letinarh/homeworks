@@ -1,60 +1,53 @@
-/*.message {
-
-}*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.container {
+    margin: 0 auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 80px 15fr 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas:
+            "avatarArea messageArea timeArea";
+}
+.avatarArea {
+    align-self: end;
+    grid-area: avatarArea;
+    align-self: end;
+}
+.avatar{
+    height: 60px;
+    width: 60px;
+    border: solid;
+    border-radius: 50%;
 }
 
-.chat {
-    padding: 40px;
+.messageArea {
+    grid-area: messageArea;
+    background-color: #282c34;
+    border: black;
+    border-radius: 15px 0px 0px 0px;
+;
 }
+.messageText{
+    color: whitesmoke;
+    padding-left: 15px;
+    padding-bottom: 1px;
+    padding-right: 5px;
+    padding-top: 5px;
 
-.message {
-    width: 100%;
+}
+.name{
+    color: crimson;
+    padding-left: 15px;
+    padding-bottom: 1px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+.timeArea {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.message--user-1 + .message--user-2,
-.message--user-2 + .message--user-1 {
-    margin-top: 1em;
-}
-.message--user-1 + .message--user-1,
-.message--user-2 + .message--user-2 {
-    margin-top: .5em;
-}
-.message__time {
-    font-size: 10px;
-    color: #ccc;
-    width: 100%;
-    margin: 0 0 5px 50px;
-}
-.message__author-pic {
-    margin: 0 10px 0 0;
-
-}
-
-.message__text {
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #69b4f3;
-    background-color: #bfe2ff;
-    max-width: 70%;
-}
-
-.message--user-2 {
-    justify-content: flex-end;
-}
-.message--user-2 .message__time {
-    text-align: right;
-    margin: 0 50px 5px 0;
-}
-.message--user-2 .message__author-pic {
-    order: 1;
-    margin: 0 0 0 10px;
-}
-.message--user-2 .message__text {
-    background-color: #69b4f3;
+    align-items: flex-end;
+    background-color: #282c34;
+    color: green;
+    border-radius: 0px 15px 15px 0px;
+    padding-bottom: 5px;
+    padding-right: 5px
 }
