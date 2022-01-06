@@ -1,8 +1,9 @@
 .container {
+    position: relative;
     margin: 0 auto;
     width: 50%;
     display: grid;
-    grid-template-columns: 80px 15fr 1fr;
+    grid-template-columns: 92px 15fr 1fr;
     grid-template-rows: auto;
     gap: 0px 0px;
     grid-template-areas:
@@ -13,11 +14,12 @@
     grid-area: avatarArea;
     align-self: end;
 }
+
 .avatar{
     height: 60px;
     width: 60px;
-    border: solid;
     border-radius: 50%;
+    border: solid;
 }
 
 .messageArea {
@@ -25,9 +27,32 @@
     background-color: #282c34;
     border: black;
     border-radius: 15px 0px 0px 0px;
-;
 }
+.messageText:before{
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    left: -19px;
+    bottom: -16px;
+    border-style: solid;
+    border-width: 0 0 20px 20px ;
+    border-color: transparent transparent #282c34 transparent;
+}
+.messageText:after{
+    position:absolute;
+    content: '';
+    width: 30px;
+    height: 40px;
+    bottom: -16px;
+    left: -30px;
+    border-radius: 100% 35% 80% 0%;
+    background-color: white;
+    z-index: 80;
+}
+
 .messageText{
+    position: relative;
     color: whitesmoke;
     padding-left: 15px;
     padding-bottom: 1px;
@@ -36,7 +61,7 @@
 
 }
 .name{
-    color: crimson;
+    color: slateblue;
     padding-left: 15px;
     padding-bottom: 1px;
     padding-right: 5px;
