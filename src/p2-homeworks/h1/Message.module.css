@@ -1,7 +1,7 @@
 .container {
     position: relative;
     margin: 0 auto;
-    width: 50%;
+    width: 80%;
     display: grid;
     grid-template-columns: 92px 15fr 1fr;
     grid-template-rows: auto;
