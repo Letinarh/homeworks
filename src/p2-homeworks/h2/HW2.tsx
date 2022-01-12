@@ -32,12 +32,12 @@ function HW2() {
     const [filter, setFilter] = useState<FilterType>('all')
 
     const filteredAffairs = filterAffairs(affairs, filter)
-    const deleteAffairCallback = (_id: number) => setAffairs(deleteAffair(affairs, _id)) // need to fix any
+    const deleteAffairCallback = (_id:number) => setAffairs(deleteAffair(affairs, _id)) // need to fix any
 
     return (
         <div>
             <hr/>
-            <h2>homeworks 2</h2>
+            <h2>Homework 2</h2>
 
             {/*should work (должно работать)*/}
             <Affairs
