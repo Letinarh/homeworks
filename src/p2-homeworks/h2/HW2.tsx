@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
+import set = Reflect.set;
 
 // types
 export type AffairPriorityType = 'high' | 'low' | 'middle'
@@ -16,15 +17,14 @@ const defaultAffairs: Array<AffairType> = [
 ]
 
 // pure helper functions
-export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): any => { // need to fix any
-    if (filter === 'all') return affairs
-    else if (filter === 'low') return affairs.filter(a => a.priority === 'low')
+export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { // need to fix any
+    if (filter === 'low') return affairs.filter(a => a.priority === 'low')
     else if (filter === 'high') return affairs.filter(a => a.priority === 'high')
     else if (filter === 'middle') return affairs.filter(a => a.priority === 'middle')
+    else return affairs
 }
 export const deleteAffair = (affairs: Array<AffairType>, _id:number ): Array<AffairType> => { // need to fix any
-
-    return affairs.filter(a => !a._id)
+    return affairs.filter(a => a._id !== _id )
 }
 
 function HW2() {
