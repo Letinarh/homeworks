@@ -16,21 +16,30 @@ function Affairs(props: AffairsPropsType) {
             deleteAffairCallback={props.deleteAffairCallback}
         />
     ))
-
+const styleHelperButtons = {
+    display : 'inline-block',
+    width:"50px",
+    height:"10px",
+}
+    const styleHelperButtons2 = {
+        width: "55px",
+        margin:"4px"
+    }
     const setAll = () => {props.setFilter("all")}// need to fix
     const setHigh = () => {props.setFilter("high")}
     const setMiddle = () => {props.setFilter("middle")}
     const setLow = () => {props.setFilter("low")}
+    
 
     return (
         <div>
 
             {mappedAffairs}
-
-            <button onClick={setAll}>All</button>
-            <button onClick={setHigh}>High</button>
-            <button onClick={setMiddle}>Middle</button>
-            <button onClick={setLow}>Low</button>
+            <div style={styleHelperButtons}></div>
+            <button style={styleHelperButtons2} onClick={setAll}>All</button>
+            <button style={styleHelperButtons2} onClick={setHigh}>High</button>
+            <button style={styleHelperButtons2} onClick={setMiddle}>Middle</button>
+            <button style={styleHelperButtons2} onClick={setLow}>Low</button>
         </div>
     )
 }

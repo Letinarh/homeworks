@@ -9,11 +9,24 @@ type AffairPropsType = {
 
 function Affair(props: AffairPropsType) {
     const deleteCallback = () => {props.deleteAffairCallback(props.affair._id)}// need to fix
+    const affairsTitleStyle = {
+    display : 'inline-block',
+    width:"164px",
+    height:"30px",
 
+}
+    const affairsPriorityStyle = {
+        display : 'inline-block',
+        width:"55px",
+        height:"30px",
+        background:"transparent",
+    }
+    
     return (
         <div>
-            <span>{props.affair.name} {props.affair.priority} </span>
-
+            <div style={affairsPriorityStyle}>   </div>
+            <div style={affairsTitleStyle}>{props.affair.name}</div>
+            <div style={affairsPriorityStyle}> {props.affair.priority} </div>
             <button onClick={deleteCallback}>X</button>
         </div>
     )
