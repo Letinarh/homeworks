@@ -24,7 +24,6 @@ function Affair(props: AffairPropsType) {
     
     return (
         <div>
-            <div style={affairsPriorityStyle}>   </div>
             <div style={affairsTitleStyle}>{props.affair.name}</div>
             <div style={affairsPriorityStyle}> {props.affair.priority} </div>
             <button onClick={deleteCallback}>X</button>

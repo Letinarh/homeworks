@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
-import set = Reflect.set;
 
 // types
 export type AffairPriorityType = 'high' | 'low' | 'middle'
@@ -37,7 +36,7 @@ function HW2() {
     return (
         <div>
             <hr/>
-            <h2>Homework 2</h2>
+            <h3>Homework 2</h3>
 
             {/*should work (должно работать)*/}
             <Affairs

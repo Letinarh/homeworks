@@ -1,6 +1,7 @@
 import React from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
+import s from "./Affairs.module.css"
 
 type AffairsPropsType = { // --- need to fix any
     data: Array<AffairType>
@@ -16,26 +17,21 @@ function Affairs(props: AffairsPropsType) {
             deleteAffairCallback={props.deleteAffairCallback}
         />
     ))
-const styleHelperButtons = {
-    display : 'inline-block',
-    width:"50px",
-    height:"10px",
-}
+
     const styleHelperButtons2 = {
         width: "55px",
-        margin:"4px"
+        margin:"3px"
     }
     const setAll = () => {props.setFilter("all")}// need to fix
     const setHigh = () => {props.setFilter("high")}
     const setMiddle = () => {props.setFilter("middle")}
     const setLow = () => {props.setFilter("low")}
     
-
+//<div style={styleHelperButtons}></div>
     return (
-        <div>
-
+        <div className={s.main}>
             {mappedAffairs}
-            <div style={styleHelperButtons}></div>
+            <div ></div>
             <button style={styleHelperButtons2} onClick={setAll}>All</button>
             <button style={styleHelperButtons2} onClick={setHigh}>High</button>
             <button style={styleHelperButtons2} onClick={setMiddle}>Middle</button>
