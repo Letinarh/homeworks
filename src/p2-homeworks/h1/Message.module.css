@@ -47,7 +47,7 @@
     bottom: -16px;
     left: -30px;
     border-radius: 100% 35% 80% 0%;
-    background-color: #96f0f1;
+    background-color: white;
     z-index: 80;
 }
 
@@ -75,4 +75,7 @@
     border-radius: 0px 15px 15px 0px;
     padding-bottom: 5px;
     padding-right: 5px
+}
+.HW1{
+    background-color: white;
 }
