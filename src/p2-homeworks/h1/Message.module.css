@@ -28,6 +28,11 @@
     border: black;
     border-radius: 15px 0px 0px 0px;
 }
+.angle {
+    width:55px;
+    height: 35px;
+    background: radial-gradient(circle at 0 0, rgba(0,0,0,0) 35px, rgba(255,255,255,0.3) 0);
+}
 .messageText:before{
     position: absolute;
     content: '';

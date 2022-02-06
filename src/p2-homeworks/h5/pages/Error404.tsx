@@ -1,6 +1,8 @@
 import React from 'react'
+import  s from './ErrorPage.module.css'
 
 function Error404() {
+
     return (
         <div>
             <div>404</div>
