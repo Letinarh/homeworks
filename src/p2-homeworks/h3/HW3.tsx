@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import GreetingContainer from './GreetingContainer'
 import {v1} from "uuid";
+import s from './Greeting.module.css'
 
 // types
 export type UserType = {
@@ -18,7 +19,7 @@ function HW3() {
     }
 
     return (
-        <div>
+        <div className={s.cssSelector}>
             <hr/>
             <h3> Homework 3</h3>
 

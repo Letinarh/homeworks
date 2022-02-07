@@ -59,18 +59,12 @@
 .messageText{
     position: relative;
     color: #c6d3c1;
-    padding-left: 15px;
-    padding-bottom: 1px;
-    padding-right: 5px;
-    padding-top: 5px;
+    padding: 5px 5px 1px 15px;
 
 }
 .name{
     color: #88879f;
-    padding-left: 15px;
-    padding-bottom: 1px;
-    padding-right: 5px;
-    padding-top: 5px;
+    padding: 5px 5px 1px 15px;
 }
 .timeArea {
     display: flex;

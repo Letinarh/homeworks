@@ -14,7 +14,7 @@ function HW1() {
 
     return (
         <div className={s.HW1}>
-            <hr/>
+
             <h3>Homework 1</h3>
 
             {/*should work (должно работать)*/}

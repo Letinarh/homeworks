@@ -20,7 +20,7 @@ function HW4() {
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
 
     return (
-        <div>
+        <div className={s.cssSelector}>
             <hr/>
             <h3>Homework 4</h3>
 

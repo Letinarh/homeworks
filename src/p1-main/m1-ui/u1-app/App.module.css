@@ -1,5 +1,10 @@
 .App {
-    background: rgb(2,0,36);
-    background: linear-gradient(151deg, rgba(2,0,36,1) 0%, rgba(4,208,250,1) 0%, rgba(4,154,207,1) 37%, rgba(4,88,154,1) 73%, rgba(4,4,87,1) 100%);
-    display: inline-block;
+    background-color: black;
+}
+h2{
+    color: whitesmoke;
+    text-align: center;
+}
+.firstDiv{
+    background-color: black;
 }

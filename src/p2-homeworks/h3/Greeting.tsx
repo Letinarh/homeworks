@@ -17,6 +17,7 @@ const Greeting: React.FC<GreetingPropsType> = (
     console.log(name)
     console.log("total Users " + totalUsers)
     return (
+
         <div className={s.main}>
             <input value={name} onChange={setNameCallback} className={inputClass}/>
             <span>{error}</span>
