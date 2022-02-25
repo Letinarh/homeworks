@@ -10,3 +10,7 @@
 .error {
     color: red;
 }
+.spanItem{
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border:  solid black;
+}

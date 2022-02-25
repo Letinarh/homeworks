@@ -35,8 +35,8 @@ function HW2() {
     const deleteAffairCallback = (_id:number) => setAffairs(deleteAffair(affairs, _id)) // need to fix any
 
     return (
-        <div className={s.cssSelector}>
-            <hr/>
+        <div >
+
             <h3>Homework 2</h3>
 
             {/*should work (должно работать)*/}
@@ -46,10 +46,10 @@ function HW2() {
                 deleteAffairCallback={deleteAffairCallback}
             />
 
-            <hr/>
+
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeAffairs/>*/}
-            <hr/>
+
         </div>
     )
 }

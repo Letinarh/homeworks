@@ -5,7 +5,8 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: black;
+/*    background-color: black;*/
+    background-image: url("https://wallpapersmug.com/large/57ef80/minimalistic-shapes-dark-neon-puzzle.jpg");
 }
 
 code {

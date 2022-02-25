@@ -1,10 +1,18 @@
 .App {
-    background-color: black;
+/*    background-color: black;*/
 }
-h2{
+h2,h3{
     color: whitesmoke;
     text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    display: block;
+    width: 300px;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 5px auto;
+
+
 }
 .firstDiv{
-    background-color: black;
+    background-color: rgba(0,0,0,0.6);
 }

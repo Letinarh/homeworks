@@ -34,26 +34,15 @@
     background: radial-gradient(circle at 0 0, rgba(0,0,0,0) 35px, rgba(255,255,255,0.3) 0);
 }
 .messageText:before{
+
     position: absolute;
     content: '';
-    width: 0px;
-    height: 0px;
+    width: 20px;
+    height: 20px;
     left: -19px;
     bottom: -16px;
-    border-style: solid;
-    border-width: 0 0 20px 20px ;
-    border-color: transparent transparent #082103 transparent;
-}
-.messageText:after{
-    position:absolute;
-    content: '';
-    width: 30px;
-    height: 40px;
-    bottom: -16px;
-    left: -30px;
-    border-radius: 100% 35% 80% 0%;
-    background-color: white;
-    z-index: 80;
+    background: radial-gradient(at 0% 0%, transparent 68%, #082103 68%);
+
 }
 
 .messageText{
@@ -76,5 +65,7 @@
     padding-right: 5px
 }
 .HW1{
-    background-color: white;
+ /*   background-color: #4b72ba;*/
+   /* background: linear-gradient(220deg, #4b72ba, #22c3e3);*/
+
 }

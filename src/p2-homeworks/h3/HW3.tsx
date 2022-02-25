@@ -14,19 +14,23 @@ function HW3() {
     const [users, setUsers] = useState<Array<UserType>>([]) // need to fix any
 
     const addUserCallback = (name: string) => { // need to fix any
-        const newUser:UserType ={_id: v1(), name }
-        setUsers([newUser,...users]) // need to fix
+        const newUser: UserType = {_id: v1(), name}
+        setUsers([newUser, ...users]) // need to fix
     }
 
     return (
-        <div className={s.cssSelector}>
+        <div >
             <hr/>
+
             <h3> Homework 3</h3>
+            <div className={s.cssSelector}>
+                <GreetingContainer users={users} addUserCallback={addUserCallback}/>
+                {/*should work (должно работать)*/}
+            </div>
 
-            {/*should work (должно работать)*/}
-            <GreetingContainer users={users} addUserCallback={addUserCallback}/>
 
-            <hr/>
+
+
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeGreeting/>*/}
             <hr/>
