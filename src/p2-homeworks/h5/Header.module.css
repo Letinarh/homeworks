@@ -4,12 +4,12 @@
     padding: 0.5em 1.6em;
     border: none;
     outline: none;
-    /*color: rgb(255, 255, 255);*/
     background: black;
     cursor: pointer;
     position: relative;
     z-index: 0;
     border-radius: 15px;
+    line-height: 47px;
 }
 .aciveLink:before {
     content: "";
@@ -62,6 +62,8 @@
     width: 100%;
     min-width: 400px;
     text-align: center;
+    height: 47px;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .bn5 {

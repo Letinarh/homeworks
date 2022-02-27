@@ -4,7 +4,8 @@ import s from './Message.module.css'
 
 
 const messageData = {
-    avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
+/*    avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',*/
+    avatar: 'https://www.meme-arsenal.com/memes/825b9b3ef148fbf2b20f47951e170699.jpg',
     name: 'Vasiliy',
     message: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Culpa cum dolores eveniet expedita illo officia placeat quo   reiciendis repudiandae, sed sequi soluta tenetur vero voluptate,    voluptatibus! Cumque cupiditate provident tempore.",
     time: '22:00',
@@ -14,6 +15,8 @@ function HW1() {
 
     return (
         <div className={s.HW1}>
+
+            <div className={s.borderDiv}></div>
             <hr/>
             <h3>Homework 1</h3>
 

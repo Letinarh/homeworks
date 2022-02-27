@@ -4,35 +4,39 @@
     width: 80%;
     max-width: 800px;
     display: grid;
-    grid-template-columns: 80px 15fr 1fr;
+    grid-template-columns: 80px 15fr 3rem;
     grid-template-rows: auto;
     gap: 0px 0px;
     grid-template-areas: "avatarArea messageArea timeArea";
 }
+
 .avatarArea {
     grid-area: avatarArea;
     align-self: end;
 }
 
-.avatar{
+.avatar {
     height: 60px;
     width: 60px;
     border-radius: 50%;
     border: solid 2px;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .messageArea {
     grid-area: messageArea;
-    background-color: #082103;
+    background-color: rgba(0, 0, 0, 0.7);
     border: black;
     border-radius: 15px 0px 0px 0px;
 }
+
 .angle {
-    width:55px;
+    width: 55px;
     height: 35px;
-    background: radial-gradient(circle at 0 0, rgba(0,0,0,0) 35px, rgba(255,255,255,0.3) 0);
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 35px, rgba(255, 255, 255, 0.3) 0);
 }
-.messageText:before{
+
+.messageText:before {
 
     position: absolute;
     content: '';
@@ -40,31 +44,40 @@
     height: 20px;
     left: -19px;
     bottom: -16px;
-    background: radial-gradient(at 0% 0%, transparent 68%, #082103 68%);
+    background: radial-gradient(at 0% 0%, transparent 68%, rgba(0,0,0,0.5) 68%);
 
 }
 
-.messageText{
+.messageText {
     position: relative;
-    color: #c6d3c1;
+    color: whitesmoke;
     padding: 5px 5px 1px 15px;
 
 }
-.name{
-    color: #88879f;
+
+.name {
+    color: goldenrod;
+    font-size: larger;
+    font-weight: 500;
     padding: 5px 5px 1px 15px;
 }
+
 .timeArea {
     display: flex;
     align-items: flex-end;
-    background-color: #082103;
-    color: #30482c;
+    color: darkgray;
     border-radius: 0px 15px 15px 0px;
     padding-bottom: 5px;
-    padding-right: 5px
+    padding-right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
-.HW1{
- /*   background-color: #4b72ba;*/
-   /* background: linear-gradient(220deg, #4b72ba, #22c3e3);*/
 
+.HW1 {
+    /*   background-color: #4b72ba;*/
+    /* background: linear-gradient(220deg, #4b72ba, #22c3e3);*/
+
+}
+
+.borderDiv {
+    height: 55px;
 }
