@@ -1,0 +1,8 @@
+.MainArea {
+    width: 280px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: linear-gradient(220deg, #4b72ba, #22c3e3);
+    display: inline-grid;
+}

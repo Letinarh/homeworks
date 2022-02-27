@@ -8,12 +8,15 @@
         animation: AnimationName 41s ease infinite;*/
     justify-content: center;
 }
+.spanArea{
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 4px;
+    text-align: center;
+}
 .MyButtons{
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     font-size: large;
     padding: 3px;
-
-    margin: 3px;
 }
 
 .DivWithCode {
@@ -23,46 +26,10 @@
     display: inline-grid;
     grid-template-columns: 5fr 1fr 1fr;
     background: linear-gradient(220deg, #4b72ba, #22c3e3);
-    background-size: 400% 400%;
-
-    -webkit-animation: AnimationName 41s ease infinite;
-    -moz-animation: AnimationName 41s ease infinite;
-    animation: AnimationName 41s ease infinite;
-
 }
-
-@-webkit-keyframes AnimationName {
-    0% {
-        background-position: 88% 0%
-    }
-    50% {
-        background-position: 13% 100%
-    }
-    100% {
-        background-position: 88% 0%
-    }
-}
-
-@-moz-keyframes AnimationName {
-    0% {
-        background-position: 88% 0%
-    }
-    50% {
-        background-position: 13% 100%
-    }
-    100% {
-        background-position: 88% 0%
-    }
-}
-
-@keyframes AnimationName {
-    0% {
-        background-position: 88% 0%
-    }
-    50% {
-        background-position: 13% 100%
-    }
-    100% {
-        background-position: 88% 0%
-    }
+.areaForSpan{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
 }

@@ -3,14 +3,18 @@
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    border: 3px solid red;
+    border-radius: 4px;
+    background: whitesmoke;
+    color: whitesmoke;
 }
 
 .error {
-    color: red;
+
+
 }
 .spanItem{
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.3);
     border:  solid black;
+    background-color: red;
 }

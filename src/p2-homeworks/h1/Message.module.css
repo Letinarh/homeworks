@@ -2,15 +2,14 @@
     position: relative;
     margin: 0 auto;
     width: 80%;
+    max-width: 800px;
     display: grid;
-    grid-template-columns: 92px 15fr 1fr;
+    grid-template-columns: 80px 15fr 1fr;
     grid-template-rows: auto;
     gap: 0px 0px;
-    grid-template-areas:
-            "avatarArea messageArea timeArea";
+    grid-template-areas: "avatarArea messageArea timeArea";
 }
 .avatarArea {
-    align-self: end;
     grid-area: avatarArea;
     align-self: end;
 }

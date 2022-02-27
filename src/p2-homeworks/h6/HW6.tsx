@@ -16,15 +16,16 @@ function HW6() {
 
     return (
         <div className={s.HW6Area}>
-            <hr/>
+
             <h3>Homework 6</h3>
 
             {/*should work (должно работать)*/}
             <div className={s.DivWithCode}>
-                <div>
+                <div className={s.areaForSpan}>
                     <SuperEditableSpan
                         value={value}
                         onChangeText={setValue}
+                        className={s.spanArea}
                         spanProps={{children: value ? undefined : 'enter text...'}}
                     />
                 </div>
