@@ -6,3 +6,24 @@
     background: linear-gradient(220deg, #4b72ba, #22c3e3);
     display: inline-grid;
 }
+.paperOfName{
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.3);
+    padding: 5px;
+}
+.nameArea{
+    display: grid;
+    grid-template-columns: 1fr 45px;
+    width: 240px;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+.nameArea span{
+    text-align: left;
+}
+
+.buttonArea{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 10px;
+}
