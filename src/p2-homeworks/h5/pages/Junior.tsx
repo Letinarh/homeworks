@@ -1,9 +1,10 @@
 import React from 'react';
+import HW8 from "../../h8/HW8";
 
 const Junior = () => {
     return (
         <div>
-            Hello Jun
+            <HW8/>
         </div>
     );
 };
