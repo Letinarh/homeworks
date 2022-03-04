@@ -27,3 +27,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 10px;
 }
+.buttonArea button:hover{
+    cursor: pointer;
+}
