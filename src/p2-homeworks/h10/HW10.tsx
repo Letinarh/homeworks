@@ -1,9 +1,12 @@
 import React from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import {useDispatch, useSelector} from "react-redux";
+
 
 function HW10() {
     // useSelector, useDispatch
-    const loading = false
+    const loading = useSelector(state => state)
+    const dispatch = useDispatch
 
     const setLoading = () => {
         // dispatch
@@ -13,8 +16,7 @@ function HW10() {
 
     return (
         <div>
-            <hr/>
-            homeworks 10
+            <h2>Homework 10</h2>
 
             {/*should work (должно работать)*/}
             {loading
@@ -26,8 +28,6 @@ function HW10() {
                     </div>
                 )
             }
-
-            <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<Alternative/>*/}
             <hr/>
