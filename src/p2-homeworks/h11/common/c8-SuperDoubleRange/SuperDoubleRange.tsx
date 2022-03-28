@@ -35,8 +35,8 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
                 // getAriaLabel={() => 'Second slider'}
                 value={value}
                 onChange={onChangeCallback}
-                //valueLabelDisplay="off"
-                // getAriaValueText={"valuetext"}
+                valueLabelDisplay="auto"
+                //getAriaValueText={"valuetext"}
             />
         </>
     )

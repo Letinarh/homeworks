@@ -1,5 +1,4 @@
-import Box from '@material-ui/core/Box'
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import SuperRange from './common/c7-SuperRange/SuperRange'
 import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange'
 
@@ -17,26 +16,23 @@ function HW11() {
         <div>
             <hr/>
             <h3>Homework 11</h3>
-
             {/*should work (должно работать)*/}
             <div>
                 <span>{value1}</span>
                 <SuperRange
                     onChangeRange={setValue1}
+                    value={value1}
                     // сделать так чтоб value1 изменялось
                 />
             </div>
 
             <div>
                 <span>{value1}</span>
-                <Box sx={{width: 400}}>
                     <SuperDoubleRange
                         value={[value1, value2]}
                         onChangeRange={valueObserver}
-
                         // сделать так чтоб value1 и value2 изменялось
                     />
-                </Box>
 
                 <span> - {value2}</span>
             </div>
