@@ -1,5 +1,6 @@
 import Slider from '@material-ui/core/Slider'
 import React, {ChangeEvent} from 'react'
+import s from '../c7-SuperRange/SuperRange.module.css'
 
 type SuperDoubleRangePropsType = {
     onChangeRange?: (value: [number, number]) => void
@@ -32,11 +33,10 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     return (
         <>
             <Slider
-                // getAriaLabel={() => 'Second slider'}
+                className={s.slider}
                 value={value}
                 onChange={onChangeCallback}
                 valueLabelDisplay="auto"
-                //getAriaValueText={"valuetext"}
             />
         </>
     )
