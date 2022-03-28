@@ -18,7 +18,6 @@ function HW11() {
 
     return (
         <div>
-            <hr/>
             <h3>Homework 11</h3>
             {/*should work (должно работать)*/}
             <div className={s.secondRangeDiv}>
